@@ -1,0 +1,23 @@
+# project specific directories
+/.vscode
+/upload/
+
+# environment variables
+.env
+
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Binaries for tests and tools
+*.test
+*.out
+_build/
+
+# Dependency directories (go modules)
+/go.mod
+/go.sum
+/vendor/

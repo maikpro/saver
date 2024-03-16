@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+    mongodb:
+        image: mongo:latest # Use the latest MongoDB image from Docker Hub
+        container_name: mongodb # Name your MongoDB container
+        ports:
+            - '27017:27017' # Map host port to container port
+        volumes:
+            - mongodb_data:/data/db # Mount a volume to persist MongoDB data
+
+volumes:
+    mongodb_data: # Define the volume for MongoDB data
